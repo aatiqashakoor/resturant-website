@@ -1,0 +1,43 @@
+.header{
+    background-color:wheat;
+    height:10000px ;
+    width: 100%;
+}
+.backgroundimg-div{
+    width: 100%;
+     background-image:linear-gradient(rgba(110, 106, 102, 0.37),rgba(177, 158, 145, 0.137) ), url(../img/resturant22.jpg);
+     background-repeat:no-repeat;
+     background-size: cover; 
+     height: 680px;
+}
+.bg-title{
+    background-color: red;
+    display:inline-block;
+     margin-top: 300px; 
+     margin-left: 24px;
+     font-size: large;
+     color:whitesmoke;
+    
+}
+ .bg-text11{
+    font-family:Arial, Helvetica, sans-serif;
+     font-size: 3em;
+    padding-left: 20px;
+     padding-top: 0px;
+
+
+}
+.bgtextbtn{
+    margin-left: 18px;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    
+    
+}
+.menu{
+
+}
+.menulogo{
+    text-align: center;
+}
