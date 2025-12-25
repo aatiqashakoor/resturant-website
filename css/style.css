@@ -1,5 +1,5 @@
 .header{
-    background-color:wheat;
+        background-color: rgb(212, 47, 47);
     height:10000px ;
     width: 100%;
 }
@@ -35,9 +35,39 @@
     
     
 }
-.menu{
-
+#menu{
+    scroll-behavior: smooth;
 }
 .menulogo{
     text-align: center;
+    background-color: rgb(212, 47, 47);
 }
+ .card {
+margin-left: 20px;
+margin-right: 20px; 
+
+}
+.col1h1{
+    margin: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+
+}
+.firstcolumn{
+    margin-top:30px ;
+}
+.col1{
+justify-items: center;
+
+}
+.card1btn{
+text-align: right;
+margin: 5px;
+}
+.card1btn :hover{
+    background-color:white;
+    color: rgb(196, 8, 8);
+    border: 2px solid rgb(211, 22, 22)}
