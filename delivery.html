@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select Location</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {  margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .location-container {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      height: 100vh;
+      display: flex;  flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+      border-bottom: 1px solid #ddd;
+    }
+    .close-btn {
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      background: red;
+      color: white;
+      border-radius: 6px;
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+    /* Address Search */
+    .search-box {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .search-box label {
+      font-size: 14px;
+      color: #555;
+    }
+     .search-input {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 6px;
+    }
+    .search-input input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .search-input i {
+      color: #d6001c;
+    }
+
+    /* Map */
+    .map-container {flex: 1;
+      position: relative;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .store-badge { position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #d6001c;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+.map-like {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: white;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    .footer {padding: 12px;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer i {
+      color: #d6001c;
+      margin-right: 5px;
+    }
+
+    .login {margin-top: 6px;
+      font-size: 13px;
+    }
+
+    .login a {
+      color: #d6001c;
+      text-decoration: none;
+      font-weight: bold;
+    } 
+</style>
+</head>
+    <body>
+<div class="location-container">
+  <!-- Header -->
+  <div class="header">
+    Select Your Location for Delivery
+    <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+  </div>
+    <!-- Search -->
+  <div class="search-box">
+    <label>Enter Full Address</label>
+    <div class="search-input">
+      <input type="text" placeholder="Enter your address">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+    <!-- Map -->
+  <div class="map-container">
+    <iframe 
+      src="https://maps.google.com/maps?q=golf%20course&t=&z=14&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+
+    <div class="store-badge">No Store Found</div>
+
+    <div class="map-like">
+      Love this map? ❤️ 👍 👎
+    </div>
+    </div>
+     <!-- Footer -->
+  <div class="footer">
+    <i class="fa-solid fa-location-dot"></i>
+    Kindly enable your location or use Search
+    <div class="login">
+      Already a user? <a href="#">Login</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
